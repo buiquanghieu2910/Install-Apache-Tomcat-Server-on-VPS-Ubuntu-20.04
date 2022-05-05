@@ -9,8 +9,9 @@ First, as always, update your APT.
 $ sudo apt update
 ```
 <p>Step 1: Install java</p>
+<p>Step 2: Install Tomcat</p>
 
-```markdown
+```
 - Check for Tomcat in Repository
 $ sudo apt-cache search tomcat
 - Download and install Tomcat
@@ -32,7 +33,7 @@ $ sudo systemctl restart tomcat9
 
 <p>Step 3: Install proxy</p>
 
-```markdown
+```
 $ sudo apt-get install nginx
 $ sudo systemctl stop nginx.service
 $ sudo systemctl start nginx.service
@@ -62,7 +63,7 @@ $ sudo systemctl restart nginx.service
     
 <p>Step 4: Install mysql</p>
 
-```markdown
+```
 $ sudo apt install mysql-server
 $ sudo mysql_secure_installation
 $ sudo systemctl status mysql
